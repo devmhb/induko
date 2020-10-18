@@ -14,13 +14,9 @@ body {
 // hero section
 #hero {
   max-width: 160rem;
-  height: 100vh;
+  min-height: 130vh;
   width: 100vw;
-  background: linear-gradient(
-      rgba(141, 153, 174, 0.8),
-      rgba(141, 153, 174, 0.5)
-    ),
-    url(img/pexels-photo-747964.jpeg);
+  background: url(img/slider_img.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
@@ -49,6 +45,7 @@ body {
             padding: 2.5rem;
             color: #ffffff;
             cursor: pointer;
+            transition: color 200ms;
 
             &:hover {
               color: #536b81;
@@ -276,28 +273,176 @@ body {
       }
     }
     .row-bottom {
-      text-align: center;
       font-size: 4rem;
       text-transform: capitalize;
-      background: rgba(255, 255, 255, 0.5);
-      padding: 70px 200px;
+      padding: 70px 350px;
+      .ul-items {
+        &:nth-child(1) {
+          padding-top: 2rem;
+        }
+        ul {
+          background: rgba(221, 217, 217, 1);
+          box-shadow: 0.5px 0.5px 10px black;
+          text-align: left;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          list-style: none;
 
-      ul {
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        list-style: none;
-
-        li {
-          width: 40%;
-          font-size: 30px;
-          font-weight: 300;
-          color: #000;
-          line-height: 60px;
+          li {
+            width: 40%;
+            font-size: 30px;
+            font-weight: 300;
+            color: #000;
+            line-height: 60px;
+          }
         }
       }
     }
   }
 }
 // end time table section
+
+// section succes
+
+#succes {
+  height: 100vh;
+  width: 100vw;
+  .container {
+    text-align: center;
+    .row-top {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      h1 {
+        font-size: 6rem;
+        margin-bottom: 2.5rem;
+      }
+      p {
+        font-size: 2rem;
+        color: #536b81;
+        width: 50%;
+      }
+    }
+    .row-bottom {
+      text-transform: capitalize;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      img {
+      }
+      h2 {
+        font-size: 4rem;
+        color: #13298b;
+        font-weight: 400;
+        margin-top: 1rem;
+      }
+      h3 {
+        font-size: 3rem;
+        margin-top: 3rem;
+      }
+      h4 {
+        font-size: 2.5rem;
+        margin-top: 1rem;
+        font-weight: 300;
+      }
+      p {
+        width: 80%;
+        font-size: 2rem;
+        color: #536b81;
+        margin-top: 2rem;
+      }
+    }
+  }
+}
+// end section succes
+
+// section subscribe
+#subscribe {
+  width: 100vw;
+  margin-top: 10vh;
+  .container {
+    height: 50vh;
+    width: 100vw;
+    background-image: url(/img/blue_bg.png);
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .col-left {
+      padding-left: -5rem;
+      h2 {
+        font-size: 3rem;
+        color: #fff;
+        margin-bottom: 1rem;
+      }
+      p {
+        font-size: 2rem;
+        color: #fff;
+        width: 60%;
+      }
+    }
+    .col-right {
+      margin-left: -8rem;
+
+      input {
+        padding: 2rem 10rem 2rem 5rem;
+        border: none;
+        text-align: left;
+        border-radius: 5rem 0 0 5rem;
+        &:focus {
+          outline: none;
+        }
+        &::placeholder {
+          text-align: left;
+          color: black;
+        }
+      }
+      button {
+        text-transform: uppercase;
+        padding: 2rem 4rem;
+        display: inline-block;
+        margin-left: -3rem;
+        border: none;
+        border-radius: 0 5rem 5rem 0;
+        background-color: rgb(204, 66, 66);
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}
+//End section subscribe
+
+// section footer
+#footer {
+  width: 100vw;
+
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(41, 38, 38);
+    padding: 5rem;
+    color: #fff;
+    h1 {
+      font-size: 3rem;
+      font-weight: 500;
+    }
+    p {
+      font-size: 1.5rem;
+      font-weight: 300;
+    }
+  }
+}
+// end section footer
+.copyright {
+  font-size: 1.5rem;
+  text-align: center;
+}
